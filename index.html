@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Habity</h1>
+        <p>Your simple Habit Tracker</p>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+    </header>
+    <main>
+        <section id="add-habit">
+            <h2>Add a Habit</h2>
+            <form id="habit-form">
+                <input type="text" id="habit-name" placeholder="Enter Habit Name" required autocomplete="off">
+                <button type="submit">Add Habit</button>
+                <button type="reset">Clear Habits</button>
+            </form>
+        </section>
+        <section id="habit-list">
+            <h2>Your Habits</h2>
+            <ul id="habits"></ul>
+        </section>
+        <br>
+        <section id="progress">
+            <h2>Progress</h2>
+            <p id="progress-status"></p>
+            <canvas id="progress-chart" width="400" height="200"></canvas>
+        </section>
+    </main>
+    <script src="script.js" ></script>
+    
+</body>
+</html>

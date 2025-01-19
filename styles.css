@@ -1,0 +1,121 @@
+/* Reset */
+body, h1, h2, ul, li, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    position:relative;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-top: 0px;
+    position:relative;
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+
+
+#theme-toggle {
+    justify-content: flex-end;
+    padding: 10px;
+    font-family: Montserrat;
+    font-weight: 500;
+    border-radius: 15px;
+    border: #333 2px solid;
+    margin-left: auto;
+    margin-top: 0;
+    display: flex;
+    position: fixed;
+    margin-top: 2px;
+    right: 2%;
+}
+
+
+/* Add Habit Section */
+#add-habit {
+    margin-bottom: 20px;
+}
+
+#habit-form input {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    width: 500px;
+    height: 50px;
+    font-size: medium;
+}
+
+#habit-form button {
+    padding: 10px;
+}
+
+/* Habit List */
+#habits {
+    list-style: none;
+}
+
+#habits li.completed {
+    background-color: #58e687;
+    color: #fff;
+}
+
+#habits li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+body.dark #habits li {
+    background-color: #444;
+    border-color: #555;
+}
+
+body.dark #habits li.completed {
+    background-color: #58e687;
+    border-color: #555;
+}
+
+body.dark #theme-toggle {
+    background-color: #555;
+    border-color: #f9f9f9;
+    color: #f9f9f9;
+}
+
+
+#habitProgressChart {
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+}
